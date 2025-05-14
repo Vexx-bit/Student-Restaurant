@@ -1,0 +1,198 @@
+:root {
+    /* Primary Colors */
+    --color-navy-blue: #1C3D5A;
+    --color-sky-blue: #67B7D1;
+    --color-golden-yellow: #F2A900;
+    --color-soft-coral: #F28C8C;
+
+    /* Neutral Colors */
+    --color-gray-bg: #F5F5F5;
+    --color-charcoal-gray: #333333;
+    --color-text-black: #2D2D2D;
+    --color-text-white: #FFFFFF;
+
+    /* Font Families */
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Lato', sans-serif;
+
+    /* Font Sizes */
+    --font-size-base: 1rem;
+    --font-size-small: 0.875rem;
+    --font-size-large: 1.25rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 2.5rem;
+
+    /* Font Weights */
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 600;
+
+    /* Spacing */
+    --spacing-small: 0.5rem;
+    --spacing-medium: 1rem;
+    --spacing-large: 1.5rem;
+
+    /* Line Heights */
+    --line-height-heading: 1.2;
+    --line-height-body: 1.6;
+
+    /* Border Radius */
+    --border-radius: 8px;
+
+    /* Box Shadow */
+    --box-shadow-light: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-gray-bg);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.sidebar {
+    background-color: var(--color-navy-blue);
+    color: var(--color-text-white);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -200px;
+    width: 200px;
+    transition: left 0.3s;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar-header {
+    padding: var(--spacing-medium);
+    border-bottom: 1px solid var(--color-soft-coral);
+}
+
+.sidebar-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-links a {
+    display: block;
+    padding: var(--spacing-medium);
+    color: var(--color-text-white);
+    text-decoration: none;
+}
+
+.sidebar-links a:hover {
+    background-color: var(--color-soft-coral);
+    margin-left: 5px;
+}
+
+.navbar {
+    background-color: var(--color-navy-blue);
+    color: var(--color-text-white);
+}
+
+#sidebarClose {
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 15px);
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    display: none;
+    cursor: pointer;
+}
+
+
+
+.main-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: var(--spacing-large);
+    background-color: var(--color-text-white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow-light);
+}
+
+h1 {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-navy-blue);
+    text-align: center;
+    margin-bottom: var(--spacing-large);
+}
+
+label {
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-black);
+}
+
+.form-control {
+    border-radius: var(--border-radius);
+    margin-bottom: var(--spacing-medium);
+}
+
+.btn-primary {
+    background-color: var(--color-sky-blue);
+    border: none;
+    padding: var(--spacing-small) var(--spacing-large);
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-medium);
+    border-radius: var(--border-radius);
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-navy-blue);
+}
+
+.btn-secondary {
+    margin-top: var(--spacing-small);
+    font-size: var(--font-size-small);
+    color: var(--color-text-black);
+    width: 100%;
+    border: none;
+    text-align: center;
+}
+
+.btn-secondary:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        padding: var(--spacing-medium);
+    }
+
+    h1 {
+        font-size: var(--font-size-large);
+    }
+}
+
+.footer {
+    background-color: var(--color-navy-blue);
+    color: var(--color-text-white);
+    text-align: center;
+    padding: var(--spacing-medium);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto; /* Push the footer to the bottom */
+}
+

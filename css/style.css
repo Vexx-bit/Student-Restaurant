@@ -1,0 +1,356 @@
+:root {
+    /* Primary Colors */
+    --color-navy-blue: #1C3D5A;
+    --color-sky-blue: #67B7D1;
+    --color-golden-yellow: #F2A900;
+    --color-soft-coral: #F28C8C;
+    
+    /* Neutral Colors */
+    --color-gray-bg: #F5F5F5;
+    --color-charcoal-gray: #333333;
+    --color-text-black: #2D2D2D;
+    --color-text-white: #FFFFFF;
+    
+    /* Font Families */
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Lato', sans-serif;
+
+    /* Font Sizes (Responsive) */
+    --font-size-base: 1rem; /* 16px */
+    --font-size-small: 0.875rem; /* 14px */
+    --font-size-large: 1.25rem; /* 20px */
+    --font-size-xl: 2rem; /* 32px */
+    --font-size-xxl: 2.5rem; /* 40px */
+
+    /* Font Weights */
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 600;
+
+    /* Spacing (for padding, margins) */
+    --spacing-small: 0.5rem; /* 8px */
+    --spacing-medium: 1rem; /* 16px */
+    --spacing-large: 1.5rem; /* 24px */
+
+    /* Line Heights */
+    --line-height-heading: 1.2;
+    --line-height-body: 1.6;
+
+    /* Border Radius */
+    --border-radius: 8px;
+
+    /* Box Shadow */
+    --box-shadow-light: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    /* Responsive Media Queries */
+    @media (max-width: 768px) {
+        --font-size-xl: 1.75rem; /* 28px */
+        --font-size-xxl: 2rem; /* 32px */
+    }
+
+    @media (max-width: 480px) {
+        --font-size-xl: 1.5rem; /* 24px */
+        --font-size-xxl: 1.75rem; /* 28px */
+    }
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-gray-bg);
+    color: var(--color-text-black);
+}
+
+.zetech-header {
+    background-color: var(--color-navy-blue);
+    padding: var(--spacing-medium) 0;
+    box-shadow: var(--box-shadow-light);
+}
+
+.zetech-header .navbar-brand {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--color-text-white);
+    display: flex;
+    align-items: center;
+}
+
+.zetech-header .logo-img {
+    height: 40px; /* Adjust as needed */
+    margin-right: var(--spacing-small);
+}
+
+.zetech-header .navbar-nav .nav-link {
+    color: var(--color-text-white);
+    margin-left: var(--spacing-small);
+    font-size: var(--font-size-large);
+}
+
+.zetech-header .btn {
+    padding: 0.5rem 1rem;
+    font-size: var(--font-size-large);
+}
+
+.zetech-header .navbar-toggler {
+    border-color: var(--color-text-white);
+}
+
+.zetech-header .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba(255, 255, 255, 0.7)" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+
+@media (max-width: 992px) {
+    .zetech-header .navbar-nav .nav-link {
+        font-size: var(--font-size-base);
+        margin-left: 0;
+    }
+
+    .zetech-header .btn {
+        font-size: var(--font-size-small);
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+
+.zetech-hero {
+    background-image: url('../assets/images/hero_img.jpeg'); /* Ensure you have your background image here */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--color-text-white);
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: var(--spacing-large);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Optional shadow effect for depth */
+}
+
+/* Styling for the title */
+.hero-title {
+    font-family: var(--font-heading);
+    font-size: 2.5rem; /* Adjust font size for the title */
+    font-weight: bold; /* Bold for emphasis */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adding shadow for better readability */
+    margin-bottom: var(--spacing-small); /* Space below the title */
+}
+
+/* Styling for the description */
+.hero-description {
+    font-family: var(--font-body);
+    font-size: 1.2rem; /* Adjust font size for the description */
+    color: var(--color-cream-white); /* Use a lighter color for contrast */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Adding shadow for better readability */
+    margin-bottom: var(--spacing-medium); /* Space below the description */
+}
+
+/* Button Styling */
+.btn-primary {
+    padding: 0.75rem 1.5rem; /* Increased padding for the button */
+    font-size: 1rem; /* Button font size */
+    border-radius: var(--border-radius); /* Use the root variable for border radius */
+}
+
+.zetech-features {
+    background-color: var(--color-cream-white); /* Light background for contrast */
+    padding: var(--spacing-large) 0; /* Top and bottom padding */
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 2.5rem; /* Larger font for the title */
+    color: var(--color-text-dark);
+    margin-bottom: var(--spacing-small);
+}
+
+.section-description {
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    color: var(--color-text-dark);
+    margin-bottom: var(--spacing-medium);
+}
+
+.feature-item {
+    background-color: var(--color-blush-pink); /* Feature item background */
+    border-radius: var(--border-radius); /* Rounded corners */
+    padding: var(--spacing-medium);
+    transition: transform 0.3s; /* Smooth scaling effect */
+    box-shadow: var(--box-shadow-light); /* Soft shadow */
+}
+
+.feature-item:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+.feature-icon {
+    font-size: 3rem; /* Icon size */
+    color: var(--color-golden-yellow); /* Icon color */
+    margin-bottom: var(--spacing-small);
+}
+
+.feature-title {
+    font-family: var(--font-heading);
+    font-size: 1.5rem; /* Title size */
+    color: var(--color-text-dark);
+    margin-bottom: var(--spacing-small);
+}
+
+.feature-description {
+    font-family: var(--font-body);
+    font-size: 1rem; /* Description size */
+    color: var(--color-text-dark);
+}
+
+.zetech-how-it-works {
+    background-color: var(--color-soft-peach); /* Soft peach background for a warm feel */
+    padding: var(--spacing-large) 0; /* Top and bottom padding */
+    border-top: 5px solid var(--color-golden-yellow); /* Top border for emphasis */
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    color: var(--color-text-dark);
+    margin-bottom: var(--spacing-small);
+}
+
+.section-description {
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    color: var(--color-text-dark);
+    margin-bottom: var(--spacing-medium);
+}
+
+.how-it-works-item {
+    background-color: var(--color-blush-pink); /* Different background for steps */
+    border-radius: var(--border-radius);
+    padding: var(--spacing-medium);
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth effects */
+    box-shadow: var(--box-shadow-light);
+}
+
+.how-it-works-item:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+.how-icon {
+    font-size: 3rem; /* Icon size */
+    color: var(--color-golden-yellow); /* Icon color */
+    margin-bottom: var(--spacing-small);
+}
+
+h4 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem; /* Title size */
+    color: var(--color-text-dark);
+    margin-bottom: var(--spacing-small);
+}
+
+p {
+    font-family: var(--font-body);
+    font-size: 1rem; /* Description size */
+    color: var(--color-text-dark);
+}
+
+.zetech-testimonials {
+    background-color: var(--color-cream-white); /* Light background for contrast */
+    padding: var(--spacing-large) 0; /* Top and bottom padding */
+    border-top: 5px solid var(--color-golden-yellow); /* Top border for emphasis */
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 2.5rem; /* Title font size */
+    color: var(--color-text-dark);
+    margin-bottom: var(--spacing-medium);
+}
+
+.testimonial {
+    background-color: var(--color-blush-pink); /* Background for testimonials */
+    border-radius: var(--border-radius);
+    padding: var(--spacing-medium);
+    transition: transform 0.3s; /* Smooth scaling effect */
+    box-shadow: var(--box-shadow-light); /* Soft shadow */
+}
+
+.testimonial {
+    position: relative; /* For the pseudo-element */
+    padding: 1.5rem; /* Inner padding */
+}
+
+.testimonial::before {
+    content: '“'; /* Opening quote */
+    font-size: 3rem; /* Quote size */
+    color: var(--color-golden-yellow); /* Quote color */
+    position: absolute;
+    top: -1rem; /* Positioning */
+    left: -1rem; /* Positioning */
+}
+
+footer {
+    font-family: var(--font-body);
+    font-size: 0.9rem; /* Footer font size */
+    color: var(--color-text-dark);
+    margin-top: var(--spacing-small); /* Space above the footer */
+}
+.carousel-control-prev, 
+.carousel-control-next {
+    background-color: var(--color-golden-yellow); /* Button background color */
+    border-radius: var(--border-radius); /* Rounded corners */
+    width: 50px; /* Button width */
+    height: 50px; /* Button height */
+    opacity: 0.8; /* Slight transparency */
+}
+
+.carousel-control-prev:hover, 
+.carousel-control-next:hover {
+    opacity: 1; /* Fully opaque on hover */
+}
+
+.carousel-control-prev-icon, 
+.carousel-control-next-icon {
+    background-color: var(--color-text-dark); /* Icon background color */
+    border-radius: 50%; /* Circular background for icons */
+}
+
+.carousel-control-prev {
+    /* Positioning */
+    left: 5px; 
+    top: 120px;
+}
+
+.carousel-control-next {
+    /* Positioning */
+    right: 5px;
+    top: 120px;
+}
+
+
+.zetech-footer {
+    background-color: var(--color-blush-pink); /* Footer background color */
+    color: var(--color-text-light); /* Light text color for contrast */
+    border-top: solid 0.75px #a1a0a0;
+}
+
+.zetech-footer p {
+    margin: 0; /* Remove default margin */
+    font-family: var(--font-body); /* Font for footer text */
+    font-size: 1rem; /* Footer text size */
+}
+
+.social-icons {
+    margin-top: var(--spacing-small); /* Space above social icons */
+}
+
+.social-icons a {
+    color: var(--color-text-light); /* Icon color */
+    font-size: 1.5rem; /* Size of the icons */
+    margin: 0 10px; /* Space between icons */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.social-icons a:hover {
+    color: var(--color-golden-yellow); /* Color change on hover */
+}

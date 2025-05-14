@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zetech University Meal Card System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="zetech-header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/logo_name.png" alt="Zetech Meal Card" class="logo-img">
+                </a>
+                <!-- Hamburger Menu Button for Mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navigation Links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#how-it-works">How It Works</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonials">Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.php">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-primary ms-2" href="login.php">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-primary ms-2" href="register.php">Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+<section class="zetech-hero d-flex align-items-center text-center" id="hero">
+    <div class="container">
+        <h2 class="hero-title">Simplify Your Campus Dining Experience!</h2>
+        <p class="hero-description">With Zetech University's electronic meal card, you can quickly recharge, track your balance, and enjoy meals across campus with ease.</p>
+        <a href="register.php" class="btn btn-primary">Get Started</a>
+    </div>
+</section>
+
+    <!-- Features Section -->
+    <section class="zetech-features py-5" id="features">
+        <div class="container text-center">
+            <h2 class="section-title">Features</h2>
+            <p class="section-description">Discover the benefits of the Zetech University Meal Card system.</p>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class='bx bxs-food-menu'></i></div>
+                        <h3 class="feature-title">Easy Online Ordering</h3>
+                        <p class="feature-description">Browse the web menu and select your favorite meals to order effortlessly.</p>
+                    </div>
+                </div>
+                    <div class="col-lg-4 col-md-6 feature-item">
+                        <div class="feature-icon"><i class='bx bxs-credit-card'></i></div>
+                        <h3 class="feature-title">Instant Meal Card</h3>
+                        <p class="feature-description">Receive a meal card instantly after purchasing your meals, based on what you've paid for.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 feature-item">
+                        <div class="feature-icon"><i class='bx bxs-check-circle'></i></div>
+                        <h3 class="feature-title">Secure Transactions</h3>
+                        <p class="feature-description">Enjoy peace of mind with secure transactions and easy tracking of your balance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- How It Works Section -->
+<section class="zetech-how-it-works py-5" id="how-it-works">
+    <div class="container text-center">
+        <h3 class="section-title">How It Works</h3>
+        <p class="section-description">Follow these simple steps to enjoy your meals with ease!</p>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="how-it-works-item">
+                    <i class='bx bx-user-circle how-icon'></i>
+                    <h4>Step 1: Register</h4>
+                    <p>Create your meal card account using your Zetech student credentials.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="how-it-works-item">
+                    <i class='bx bx-receipt how-icon'></i>
+                    <h4>Step 2: Order</h4>
+                    <p>Select your meals from the menu and proceed to checkout.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="how-it-works-item">
+                    <i class='bx bx-printer how-icon'></i>
+                    <h4>Step 3: Print Your Meal Card</h4>
+                    <p>After payment, print your meal card with your ordered items.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Testimonials Section -->
+<section class="zetech-testimonials py-5" id="testimonials">
+    <div class="container text-center">
+        <h3 class="section-title">What Students Are Saying</h3>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <blockquote class="testimonial">
+                        <p>"The Zetech meal card is so convenient! I never have to worry about carrying cash around campus."</p>
+                        <footer>– John Doe, 3rd Year</footer>
+                    </blockquote>
+                </div>
+                <div class="carousel-item">
+                    <blockquote class="testimonial">
+                        <p>"Tracking my meal spending has never been easier. It's a must-have for every student."</p>
+                        <footer>– Jane Smith, 2nd Year</footer>
+                    </blockquote>
+                </div>
+                <div class="carousel-item">
+                    <blockquote class="testimonial">
+                        <p>"I love how easy it is to order food! The meal card saves me so much time."</p>
+                        <footer>– Michael Brown, 1st Year</footer>
+                    </blockquote>
+                </div>
+                <div class="carousel-item">
+                    <blockquote class="testimonial">
+                        <p>"The variety of meals available is fantastic! I always find something I like."</p>
+                        <footer>– Sarah Johnson, 4th Year</footer>
+                    </blockquote>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Footer Section -->
+    <footer class="zetech-footer py-4 text-center">
+        <div class="container">
+            <p>&copy; 2024 Zetech University Meal Card System. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
